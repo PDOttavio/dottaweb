@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="../portfolio.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- Header / Sidebar -->
+    <header class="sidebar">
+      <div class="profile">
+        <h1 class="logo">Mi Portfolio</h1>
+        <p class="tagline">Creatividad & Código</p>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="portfolio">
+      <section class="intro">
+        <h2>Mis Proyectos</h2>
+        <p>Una muestra de mis trabajos más destacados.</p>
+      </section>
+
+      <section class="grid">
+        <article class="project">
+          <img src="https://via.placeholder.com/500x300" alt="Proyecto 1">
+          <h3>Proyecto 1</h3>
+          <p>Landing page interactiva con animaciones modernas.</p>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/500x300" alt="Proyecto 2">
+          <h3>Proyecto 2</h3>
+          <p>Dashboard con gráficos dinámicos y datos en tiempo real.</p>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/500x300" alt="Proyecto 3">
+          <h3>Proyecto 3</h3>
+          <p>E-commerce minimalista optimizado para velocidad.</p>
+        </article>
+
+        <article class="project">
+          <img src="https://via.placeholder.com/500x300" alt="Proyecto 4">
+          <h3>Proyecto 4</h3>
+          <p>App móvil híbrida con experiencia de usuario fluida.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
