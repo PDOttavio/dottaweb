@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - DOTTA</title>
+  <link rel="stylesheet" href="../servicios.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar / Header -->
+    <header class="sidebar">
+      <div class="profile">
+        <h1 class="logo">DOTTA</h1>
+        <p class="tagline">Soluciones Digitales</p>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="services">
+      <section class="intro">
+        <h2>Servicios 360°</h2>
+        <p>Ofrecemos soluciones integrales de marketing digital y producción audiovisual para marcas que buscan destacarse.</p>
+      </section>
+
+      <section class="services-grid">
+      <article class="service-card">   
+        <div class="icon">💻</div>
+         <h3>Desarrollo Web & Ecommerce</h3>
+         <p>Frontend moderno y responsive<br>Tiendas online personalizadas<br>Integración con pasarelas de pago y CRM<br>Optimización de velocidad y experiencia UX</p>
+      </article>
+
+        <article class="service-card">
+          <div class="icon">📊</div>
+          <h3>Estrategia Digital</h3>
+          <p>Diagnóstico, objetivos SMART, planes personalizados, posicionamiento de marca y storytelling.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">📱</div>
+          <h3>Gestión de Redes Sociales</h3>
+          <p>Planificación de contenidos, community management y reportes de rendimiento.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🎯</div>
+          <h3>Publicidad Digital</h3>
+          <p>Campañas en Meta, Google y TikTok. Optimización de presupuesto y reportes de conversión.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🎨</div>
+          <h3>Diseño Gráfico y Web</h3>
+          <p>Identidad visual, piezas para redes y campañas, desarrollo web y e-commerce.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">✉️</div>
+          <h3>Email Marketing & Automatización</h3>
+          <p>Segmentación, campañas personalizadas, automatizaciones e integración con CRM.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🔍</div>
+          <h3>SEO y Posicionamiento</h3>
+          <p>Contenidos optimizados, estrategias on-page y off-page, análisis de palabras clave.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="icon">🎥</div>
+          <h3>Foto, Video & Podcast</h3>
+          <p>Producción audiovisual, videos institucionales, reels, podcasts de marca y fotografía profesional.</p>
+        </article>
+      </section>
+
+      <section class="value-prop">
+        <h2>💎 Nuestra Propuesta de Valor</h2>
+        <p>DOTTA es tu equipo digital completo. Creamos estrategias, gestionamos campañas y producimos contenido profesional, todo desde un mismo lugar. Una solución integral, creativa y flexible para que tu marca destaque sin coordinar múltiples proveedores.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  </script>
+</body>
+</html>
