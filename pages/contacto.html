@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout">
+    <!-- Sidebar / Header -->
+    <header class="sidebar">
+      <div class="profile">
+        <h1 class="logo">DOTTA</h1>
+        <p class="tagline">Soluciones Digitales</p>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="https://github.com/PDOttavio/PDOttavio.git" target="_blank">GitHub</a></li>         
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="servicios.html" ">Servicios</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="contacto.html"class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+<!-- MAIN CONTACT -->
+  <main class="contact">
+    <section class="contact-grid">
+      <!-- Columna izquierda: Formulario -->
+      <div class="contact-form">
+        <h1>Escribinos</h1>
+        <form action="#" method="post">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Columna derecha: Datos de contacto -->
+      <div class="contact-info">
+        <h2>Contacto directo</h2>
+        <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> contacto@mixtomedia.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> 
+          <a href="https://wa.me/5491123456789" target="_blank">+54 9 11 2345-6789</a>
+        </p>
+
+        <h2>Seguinos</h2>
+        <ul class="social-links">
+          <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  
+</main>
+   
+
+  </div>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  </script>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
