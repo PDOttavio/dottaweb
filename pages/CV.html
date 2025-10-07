@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/cv.css">
     <title>Curriculum Vitae</title>
 </head>
 <body>
@@ -26,9 +27,84 @@
         </ul>
       </nav>
     </header>
-    <main>
-        <h1>CV</h1>
-        <p>Pronto veras aqui mi CV</p>
+     <!-- MAIN CV SECTION -->
+    <main class="cv">
+      <section class="cv-header">
+        <h1>Pablo D’Ottavio</h1>
+        <h2>Desarrollador Web | Marketing Digital</h2>
+        <p><i class="fa-solid fa-envelope"></i> pablodottavio@gmail.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +54 9 2477 538182 | +34 604 152864</p>
+
+        <!-- Botón de descarga -->
+        <a href="../docs/CV-PABLO-2025.pdf" download class="cv-download">
+          <i class="fa-solid fa-file-pdf"></i> Descargar CV en PDF
+        </a>
+      </section>
+
+      <section class="cv-about">
+        <h3>Sobre mí</h3>
+        <p>¡Hola! Soy Pablo D’Ottavio, creador de DOTTA, una agencia digital que nació de mi pasión por conectar ideas con personas a través de la tecnología. Con más de 15 años de experiencia en proyectos digitales entre Argentina e Italia, mi objetivo es ayudar a marcas y emprendedores a potenciar su presencia online con soluciones creativas: diseño web, e-commerce, redes sociales y contenidos que no solo se ven bien, sino que funcionan.</p>
+      </section>
+
+      <section class="cv-experience">
+        <h3>Experiencia Laboral</h3>
+        <div class="job">
+          <h4>DOTTA (Propietario)</h4>
+          <p class="date">Septiembre 2025 – Actualidad | Argentina / España</p>
+          <p>Desarrollo Web, E-commerce y Marketing Digital. Estrategias digitales y soluciones a medida para marcas y emprendedores.</p>
+        </div>
+
+        <div class="job">
+          <h4>Mercato Italiano</h4>
+          <p class="date">Abril 2024 – Julio 2024 | Madrid, España</p>
+          <p>Apoyo logístico, gestión de depósito y reparto.</p>
+        </div>
+
+        <div class="job">
+          <h4>Pablo D’Ottavio (Propietario)</h4>
+          <p class="date">Noviembre 2008 – Diciembre 2023 | Pergamino, Argentina</p>
+          <p>Fabricación de calzado. Gestión integral del negocio: producción, ventas y dirección general.</p>
+        </div>
+
+        <div class="job">
+          <h4>Venetian Deco snc</h4>
+          <p class="date">Febrero 2006 – Octubre 2008 | Venecia, Italia</p>
+          <p>Coordinador de Comercio Electrónico y supervisor de producción. Gestión de ventas online y supervisión de procesos productivos.</p>
+        </div>
+
+        <div class="job">
+          <h4>Cueros Venecia</h4>
+          <p class="date">Enero 2003 – Noviembre 2006 | Venecia, Italia</p>
+          <p>Coordinador de Comercio Electrónico y comercio internacional. Coordinación de ventas digitales y logística de exportación.</p>
+        </div>
+      </section>
+
+      <section class="cv-skills">
+        <h3>Aptitudes</h3>
+        <ul>
+          <li>Desarrollo Web</li>
+          <li>WordPress</li>
+          <li>E-commerce</li>
+          <li>SEO / SEM</li>
+          <li>Marketing Digital</li>
+          <li>Diseño UX / UI</li>
+        </ul>
+      </section>
+
+      <section class="cv-languages">
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Español (Nativo)</li>
+          <li>Italiano (Avanzado)</li>
+          <li>Inglés (Básico)</li>
+        </ul>
+      </section>
     </main>
+  </div>
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  </script>
 </body>
 </html>
